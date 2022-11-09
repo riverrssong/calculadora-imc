@@ -9,15 +9,23 @@
 </head>
 <body>
     <form>
-        <h1>Cálculo do IMC</h1>
-        <label for="altura">altura:</label>
-        <input type="number" name="altura" step="0.01" id="altura" placeholder="Em metros, ex: 1,68">
-        <label for="peso">peso:</label>
-        <input type="number" name="peso" id="peso">
-        <input type="button" value="Calcular" onclick="calcularIMC()">
-        <button type="reset">Limpar</button>
-    </form>
-        <div id="mensagens"></div>
-        <script src="script/index.js"></script>
-    </body>
+        <div class="container">
+            <h2>Cálculo do IMC</h1>
+            <div class="estilo_label">
+                <label for="altura">altura:</label>
+                <input type="number" name="altura" step="0.01" id="altura" placeholder="Em metros, ex: 1,68">
+            </div>
+            <div class="estilo_label">
+                <label for="peso">peso:</label>
+                <input type="number" name="peso" id="peso" placeholder="Em quilogramas, ex: 55">
+            </div>
+            <div class="estilo_buttons">
+                <input class="button" type="button" value="Calcular" onclick="calcularIMC()">
+                <input class="button" type="reset" onclick="apagar()"> 
+            </div>
+        </form>
+            <div class="mensagens" id="mensagens"></div>
+            <script src="script/index.js"></script>
+        </div>
+</body>
 </html>
