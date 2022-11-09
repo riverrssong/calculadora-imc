@@ -2,9 +2,11 @@ function calcularIMC() {
     let mensagens = document.getElementById("mensagens");
     let altura = parseFloat(document.getElementById("altura").value);
     let peso = parseFloat(document.getElementById("peso").value);
+    let sexo = parseFloat(document.getElementById)("sexo").value;
     let imc = peso/(altura * altura);
+
     
-    if (imc < 18.5) {
+    if (masculino (true) imc < 18.5) {
         mensagens.innerText="Baixo Peso";
         } else if (imc < 24.9){
         mensagens.innerText="Peso normal";
@@ -15,9 +17,19 @@ function calcularIMC() {
         } else if (imc > 39.9){
         mensagens.innerText="Obesidade mórbida";
         }
+    else (imc < 19.5) {
+        mensagens.innerText="Baixo Peso";
+        } else if (imc < 25.8){
+        mensagens.innerText="Peso normal";
+        } else if (imc < 27.3){             
+        mensagens.innerText="Sobrepeso";   
+        } else if (imc < 32.3){
+        mensagens.innerText="Obesidade";          
+        } else if (imc > 32.4){
+        mensagens.innerText="Obesidade mórbida";
+        }
 }
 
-function redefinir () {
-    let apagar = document.getElementById("apagar");
-    altura.value = {}
-}
+//function redefinir () {
+    //let apagar = document.getElementById("apagar");
+    //altura.value = {}}
